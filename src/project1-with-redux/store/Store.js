@@ -1,9 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import commentSlice from '../features/CommentSlice'
+import commentSlice from "../features/CommentSlice";
 
 const store = configureStore({
   reducer: {
-   commentsData: commentSlice
+    commentsData: commentSlice,
   },
 });
 export default store;
