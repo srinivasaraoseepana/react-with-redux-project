@@ -64,7 +64,6 @@ const Comments = () => {
   }, []);
 
   const handleRemove = (getId) => {
-    // setComments((prev) => prev.filter((cmnt) => cmnt.id !== getId));
     dispatch(removeComment(getId));
   };
 
@@ -84,7 +83,7 @@ const Comments = () => {
 
   return (
     <>
-      <h2>Comments</h2>
+      <h2>Comments {storeComments.data.length} </h2>
       {storeComments.data.map((comment, index) => (
         <div
           key={comment.id}
